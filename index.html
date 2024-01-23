@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Start Style -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .bg-trans {
+        background-color: transparent;
+      }
+
+      .bg-gray {
+        background-color: gray;
+      }
+
+      .text-white {
+        color: white;
+      }
+
+      .block {
+        display: block;
+      }
+
+      .inline {
+        display: inline;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .hidden {
+        display: none;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .justify-between {
+        justify-content: space-between;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .items-verticalcenter {
+        align-items: center;
+      }
+
+      .m-8 {
+        margin: 8px;
+      }
+
+      .p-8 {
+        padding: 8px;
+      }
+
+      .pt-25 {
+        padding-top: 25px;
+      }
+
+      .pr-45 {
+        padding-right: 45px;
+      }
+
+      .p-all {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+
+      .no-underline {
+        text-decoration: none;
+      }
+
+      .brand-color-teal {
+        background: #539d98;
+      }
+
+      .border-none {
+        border: none;
+      }
+
+      .rounded-full {
+        border-radius: 99990px;
+      }
+
+      .button-padding {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 33px;
+        padding-right: 33px;
+      }
+      .font-weight-700 {
+        font-weight: 700;
+      }
+
+      .font-size-14 {
+        font-size: 14px;
+      }
+
+      .font-UPPERCASE {
+        text-transform: uppercase;
+      }
+
+      .line-height-16 {
+        line-height: 16.8px;
+      }
+
+      .letter-space-06 {
+        letter-spacing: 0.06px;
+      }
+
+      .w-full {
+        min-width: 100%;
+      }
+
+      .pos-relative {
+        position: relative;
+      }
+
+      .zindex-10 {
+        z-index: 10;
+      }
+
+      .object-cover {
+        object-fit: cover;
+      }
+      .text-brand-teal {
+        color: #90cac7;
+      }
+      .bg-white {
+        background-color: white;
+      }
+
+      .aboslute {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <!-- End Style -->
+
+  <header
+    class="bg-trans flex justify-between pos-relative zindex-10"
+    style="padding-left: 110px; padding-top: 30px"
+  >
+    <div class="flex justify-center items-verticalcenter">
+      <img
+        class="logo"
+        src="/Images/logo.svg"
+        alt="Chris Courses Logo"
+        style="margin-right: 61px"
+      />
+      <a href="" class="text-white pr-45 no-underline">Pricing</a>
+      <a href="" class="text-white pr-45 no-underline">Courses</a>
+      <a href="" class="text-white pr-45 no-underline">Blog</a>
+      <a href="" class="text-white pr-45 no-underline">Forum</a>
+    </div>
+
+    <div
+      class="flex justify-center items-verticalcenter"
+      style="padding-right: 50px"
+    >
+      <a href="" class="text-white no-underline" style="margin-right: 35px"
+        >Login</a
+      >
+      <button
+        class="brand-color-teal text-white border-none rounded-full button-padding font-weight-700 font-size-14 font-UPPERCASE line-height-16 letter-space-06"
+      >
+        Sign Up
+      </button>
+    </div>
+  </header>
+  <!-- Can't figure out how to get it to stop scrolling to the right https://www.youtube.com/watch?v=FqmB-Zj2-PA (max-width containers) -->
+  <div style="max-width:fit-content;">
+  <section class="relative" style="max-width: 1820px">
+    <video
+      loop="loop"
+      autoplay="autoplay"
+      playsinline
+      muted="muted"
+      class="object-cover aboslute w-full"
+      style="top: -143px; left: -68px"
+      src="/videos/galaxy.b6c8fb5.mp4"
+    ></video>
+    <!-- <img
+      src="/Images/bg-image.png"
+      class="w-full pos-relative"
+      style="top: -167px"
+      alt=""
+    /> -->
+    <div style="margin-left: 139px; padding-top: 129px">
+      <div class="aboslute zindex-10" style="max-width: 550px">
+        <h1 style="font-size: 60px; margin-bottom: 34px" class="text-white">
+          Turbocharge your
+          <span class="text-brand-teal">development career</span>
+        </h1>
+
+        <p
+          class="text-white"
+          style="max-width: 449px; font-size: 20px; margin-bottom: 34px"
+        >
+          Chris Courses provides students and professionals a college-level web
+          development education.
+        </p>
+
+        <button
+          class="bg-white border-none"
+          style="color: #539d98; padding: 14px 36px; border-radius: 5px"
+        >
+          Get started
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <body></body>
+</html>
